@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/img/cart-shopping-solid.svg" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>GroceryList</title>
+</head>
+<body>
+  <main>
+    <div class="main-container">
+    <section class="container">
+      <header class="price">
+        <h1>Lista de Compras</h1>
+      </header>
+    </section>
+    <section class="container-grocery" id="container-grocery">
+      <form id="add-grocery">
+        <label for="item">Item:</label>
+        <input type="text" id="item" placeholder="Item">
+        <label for="price">Preço:</label>
+        <input type="number" id="price" placeholder="R$">
+        <button type="submit" id="submit">
+        </button>
+      </form>
+    </div>
+      <div class="list-block">
+      <ul id="list"></ul>
+      <div id="error-message"></div>
+    </div>
+    </section>
+<div class="container-total-remaining">
+    <section class="total-container">
+      <p id="total">Total: R$ 0.00</p>
+    </section>
+    <section class="remaining-container">
+      <p id="remaining">Sobrando: R$ 1000.00</p>
+    </section>
+</div>
+  </main>
+<script src="./glist.js"></script>
+</body>
+</html>
